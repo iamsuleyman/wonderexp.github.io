@@ -1,0 +1,162 @@
+
+<div class="b-blockStyle__arrow scroll_up">
+  <a href="#header"></a>
+</div>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/skrollr.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/jQuery.scrollSpeed.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/jquery.data-parallax.min.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/jquery.stellar.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/jquery.jkit.1.2.16.min.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/bootstrap-slider.js"></script>
+<script type="text/javascript" src="http://wonderexp.com/wp-content/themes/wondernet/assets/js/script.js"></script>
+
+<script type="text/javascript">
+
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/wonderexp.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://wonderexp.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.5'></script>
+<script type='text/javascript' src='http://wonderexp.com/wp-includes/js/wp-embed.min.js?ver=5.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"ru","icl_home":"http:\/\/wonderexp.com\/","ajax_url":"http:\/\/wonderexp.com\/wp-admin\/admin-ajax.php","url_type":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://wonderexp.com/wp-content/plugins/WPML.3.3.8/res/js/sitepress.js?ver=5.3'></script>
+<script type="text/javascript">
+  $(window).load(function ()
+  {
+    $('.preload').addClass('scale_eff');
+    setTimeout(function ()
+    {
+      $('.preload').css({'opacity': 0});
+
+    }, 500);
+    setTimeout(function ()
+    {
+      $('.preload').hide();
+
+    }, 1500);
+
+    $("[data-tab=tab1]").click();
+    $("[data-tab=tab6]").click();
+
+  });
+  if (jQuery('body').width() > 1025)
+  {
+
+    $(window).on('scroll', function ()
+    {
+
+      if ($(window).scrollTop() > 500)
+      {
+        $('.scroll_up').fadeIn(700);
+      }
+      else
+      {
+        $('.scroll_up').fadeOut(700);
+      }
+
+
+
+
+
+
+
+    });
+
+    var owl = $('.b-gallery__slider2');
+    owl.owlCarousel({
+      loop      : true,
+      mouseDrag : false,
+      touchDrag : false,
+      nav       : true,
+      dots      : false,
+      items     : 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      animateIn : false, // add this
+      animateOut: 'fadeOut', // and this
+      margin    : 0
+    });
+
+    var owl = $('.b-gallery__slider');
+    owl.owlCarousel({
+      loop      : false,
+      mouseDrag : false,
+      touchDrag : false,
+      nav       : true,
+      dots      : false,
+      items     : 1,
+      animateIn : false, // add this
+      animateOut: 'fadeOut', // and this
+      margin    : 0
+    });
+
+
+
+
+
+
+  }
+
+
+
+
+  var timeout = false;
+  $(window).on('scroll', function ()
+{
+          owl.on('mousewheel', '.owl-stage', function (e)
+    {
+
+      if (e.deltaY > 0)
+      {
+        setTimeout(function ()
+        {
+          owl.trigger('prev.owl');
+        }, 1000);
+
+      } else
+      {
+        setTimeout(function ()
+        {
+          owl.trigger('next.owl');
+        }, 1000);
+
+        if ($('.owl-next').hasClass('disabled'))
+        {
+          $('.b-gallery__slider').addClass('end_slide');
+
+        }
+        else
+        {
+
+        }
+      }
+      e.preventDefault();
+
+    });
+
+    if (timeout !== false) {
+    clearTimeout(timeout);
+    }
+
+
+    timeout = setTimeout(function() {
+
+
+
+    }, 2000);
+    if ($(window).scrollTop() == 0)
+    {
+      $('.b-gallery__slider').removeClass('end_slide');
+    }
+
+  });
+</script>

@@ -1,0 +1,169 @@
+---
+layout: page
+title: Компания - Wondernet Express
+subtitle: This is where I will tell my friends way too much about me
+use-site-title: true
+---
+
+
+
+<section class="aboutPage_section" id="content">
+
+  <!-- Company description -->
+  <div class="b-blockStyle b-blockStyle__1">
+    <div class="b-blockStyle__image"></div>
+    <div style="opacity: 0.8; background: #0f5785;" class="b-blockStyle__overlay"></div>
+    <div class="container">
+      <div class="b-blockStyle__text">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-5">
+            <h1 class="h2">Wondernet <br> Express LLP</h1>
+            <div class="b-text">
+              <p>{% t company.transport_serve %}</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
+            <div class="mini_text">
+              {% tf company/transport_serve_description.md %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- World partners -->
+  <div class="b-filialsBlock">
+    <div class="container">
+      <h2 class="h4">{% t company.world_partners %}</h2>
+      <div class="styleText__8 b-subTitle">
+        {% tf company/world_partners_1.md %}
+      </div>
+      <div class="b-filialsBlock__content">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            {% tf company/world_partners_2.md %}
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            {% tf company/world_partners_3.md %}
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div class="styleText__9">
+              {% tf company/world_partners_4.md %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Partners -->
+  <div class="b-partnersBlock">
+    <div class="container">
+      <h2 class="h4">{% t company.partners %}</h2>
+      <div class="b-partnersBlock__content">
+        <div class="row listBlock">
+          <div class="col-xs-6 col-sm-4">
+            {% tf company/partners_1.md %}
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            {% tf company/partners_2.md %}
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            {% tf company/partners_3.md %}
+          </div>
+        </div>
+        <div class="b-logotypes">
+          <div class="b-logotypes__item">
+            {% for index in (1..3) %}
+              <div class="b-logotypes__item__link">
+                <a target="_blank" href="#">
+                  <img src="/img/company/logo/{{ index }}.jpg" alt="" />
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="b-logotypes__item">
+            {% for index in (4..6) %}
+              <div class="b-logotypes__item__link">
+                <a target="_blank" href="#">
+                  <img src="/img/company/logo/{{ index }}.jpg" alt="" />
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- For client -->
+  <div class="b-filialsBlock allClients">
+    <div class="container">
+      <h2 class="h4">{% t company.for_client %}</h2>
+      <div class="styleText__8 b-subTitle">
+        {% t company.we_produce %}:
+      </div>
+      <div class="b-filialsBlock__content">
+        <div class="b-nBlock">
+          <div class="b-nBlock__item">
+            <span class="b-nBlock__item__number">01</span>
+            <span class="styleText__8">{% t company.shipment %}</span>
+          </div>
+          <div class="b-nBlock__item">
+            <span class="b-nBlock__item__number">02</span>
+            <span class="styleText__8">{% t company.cargo_security %}</span>
+          </div>
+          <div class="b-nBlock__item">
+            <span class="b-nBlock__item__number">03</span>
+            <span class="styleText__8">{% t company.tracking %}</span>
+          </div>
+          <div class="b-nBlock__item">
+            <span class="b-nBlock__item__number">04</span>
+            <span class="styleText__8">{% t company.provide_loading %}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Principles of company -->
+  <div class="b-principalsBlock">
+    <div class="container">
+      <h2 class="h4">{% t company.principles %}</h2>
+      <div class="b-principalsBlock__content">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            <div class="styleText__1 b-principalsBlock__title">
+              {% t company.professionalism %}
+            </div>
+            <div class="styleText__9 b-principalsBlock__text">
+              {% tf company/principles_1.md %}
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div class="styleText__1 b-principalsBlock__title">
+              {% t company.transparency %}
+            </div>
+            <div class="styleText__9 b-principalsBlock__text">
+              {% tf company/principles_2.md %}
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div class="styleText__1 b-principalsBlock__title">
+              {% t company.passion %}
+            </div>
+            <div class="styleText__9 b-principalsBlock__text">
+              {% tf company/principles_3.md %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

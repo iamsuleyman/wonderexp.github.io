@@ -1,0 +1,46 @@
+---
+common-css:
+  - "/css/bootstrap.min.css"
+  - "/css/bootstrap-social.css"
+  - "/css/main.css"
+common-ext-css:
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/bootstrap.min.js"
+  - "/js/main.js"
+---
+
+
+
+<!DOCTYPE html> 
+
+{% include head.html %}
+
+<body class="home page-template page-template-home-page page-template-home-page-php page page-id-5">
+    <div class="preload"></div>
+    
+    <div class="page__wrapper">
+      {% include header.html %}
+    </div>
+
+    <script type="text/javascript">
+        var get_lang_en = $('.icl-en a').attr('href');
+        $('.selectLangEn').attr('href', get_lang_en);
+        var get_lang_en = $('.icl-ru a').attr('href');
+        $('.selectLangRu').attr('href', get_lang_en);
+    </script>
+
+    {{ content }}
+
+
+    {% include footer.html %} 
+    
+    {% include footer-scripts.html %}
+
+</body>
+
+</html>
