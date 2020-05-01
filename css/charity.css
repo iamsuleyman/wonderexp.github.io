@@ -1,0 +1,98 @@
+.section-intro {
+  min-height: 580px;
+  position: relative;
+  border-bottom: 10px solid #028cc7;
+  padding: 120px 0 75px;
+  background: #000
+}
+
+.section-intro--background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-position: top;
+  object-position: top;
+  opacity: .3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.section-intro--company_info {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 60px
+}
+
+.section-intro .website-heading {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 57px;
+  max-width: 305px;
+  margin-bottom: 40px
+}
+
+.section-intro .website-subheading {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 5px;
+  margin-bottom: 0
+}
+
+.company-information {
+  padding: 80px 0 170px
+}
+
+.company-information--title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 25px
+}
+
+.section-title--wrapper {
+  background: #028cc7;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px
+}
+
+.section-title--text {
+  background: #171717;
+  padding-left: 140px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: .05em;
+  margin-bottom: -8px;
+  padding-right: 38px;
+  padding-top: 6px
+}
+
+.section-title--image {
+  background: #171717;
+  position: absolute;
+  left: 0;
+  top: -22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.details-section {
+  padding-top: 40px
+}
