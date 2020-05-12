@@ -21,26 +21,17 @@ common-js:
 {% include head.html %}
 
 <body class="home page-template page-template-home-page page-template-home-page-php page page-id-5">
-    <div class="preload"></div>
-    
-    <div class="page__wrapper">
-      {% include header.html %}
-    </div>
+  <div class="preload"></div>
+  
+  <div class="page__wrapper">
+    {% include header.html %}
+  </div>
 
-    <script type="text/javascript">
-        var get_lang_en = $('.icl-en a').attr('href');
-        $('.selectLangEn').attr('href', get_lang_en);
-        var get_lang_en = $('.icl-ru a').attr('href');
-        $('.selectLangRu').attr('href', get_lang_en);
-    </script>
+  {{ content }}
 
-    {{ content }}
-
-
-    {% include footer.html %} 
-    
-    {% include footer-scripts.html %}
-
+  {% include footer.html %} 
+  
+  {% include footer-scripts.html %}
 </body>
 
 </html>

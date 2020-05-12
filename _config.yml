@@ -50,7 +50,7 @@ charity-gallery:
   - "/img/charity/gallery/34.jpg"
   - "/img/charity/gallery/35.jpg"
 
-prjects-vimeo-gallery: [392940644, 392942295, 392940777, 392941623, 409878521, 409890909, 409898738]
+projects-vimeo-gallery: [392940644, 392942295, 392940777, 392941623, 409878521, 409890909, 409898738, 416297031, 416293566, 416289993]
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
