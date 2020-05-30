@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/aboutme/</loc>
+</url>
+<url>
+<loc>/charity/</loc>
+</url>
+<url>
+<loc>/company/</loc>
+</url>
+<url>
+<loc>/geography/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/projects/</loc>
+</url>
+<url>
+<loc>/services/</loc>
+</url>
+<url>
+<loc>/tags/</loc>
+</url>
+<url>
+<loc>/traffic/</loc>
+</url>
+<url>
+<loc>/test.html</loc>
+<lastmod>2020-04-30T22:16:22-07:00</lastmod>
+</url>
+</urlset>
