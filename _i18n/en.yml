@@ -1,1 +1,40 @@
-transport_serve: 'sf'
+---
+header:
+  cargo: Грузы
+  charity: Charity
+  en: EN
+  projects: Projects
+  ru: RU
+tons: tons
+services:
+  air_transportation:
+    subtitle: 'Air transportations of cargo are becoming an increasingly important part of transportation logistics of many companies, because it is the easiest and fastest type of cargo delivery, which can reach almost every part of the world.'
+    text: 'Moreover, when it comes to inaccessible areas with weak road networks and lack of railway links, this type of delivery becomes indispensable.'
+    title: Air transportations
+  auto_transportation:
+    subtitle: Autotransportation is one of the most convenient types of cargo delivery.
+    text: '<ul><li>Timeliness of this type of transportation attracts a large number of clients</li><li>Ability to deliver any cargo practically from door to door</li><li>Specifics of the autotransportations allow to track the cargo during its whole itinerary, continuously control its condition, and even escort it when it is needed. </li><ul></ul></ul>'
+    title: Autotransportations
+  grouped_transportation:
+    subtitle: 'Delivery of small consignments as a part of grouped goods is a modern tendency of the transportation market. When particularly choosing this type of transport, client receives a number of benefits'
+    text: <ul><li>Delivery by regular routes within a predictable period; </li><li>Considerable reduction of transportation costs. </li></ul>
+    title: Transportation of grouped goods
+  multimodal_transportation:
+    subtitle: 'Multimodal transportationsMultimodal transportations is a special subset of transportation and freight forwarding of goods, in which various types of transport are used in an integrated and phased manner'
+    text: The main advantage of such transportations is the best use of the benefits of each mean of transport with their prudent and well-designed combination.
+    title: Multimodal transportation
+  our:
+    subtitle: Full complex of cargo transport services across the world
+    text: >-
+      <ul><li> Rail transport;</li><li> Cargo freight-forwarding in all directions;</li><li> Provision of the railway rolling stock (covered wagons, semi-wagons, cisterns and platforms);</li><li> River cargo transportation;</li><li> Container transportation;</li><li> Multimodal cargo transportation;</li><li> Oversized cargo transportation;</li><li> Autotransportation;</li><li> Air transportation;</li><li> Transportation of grouped goods with the provision of consolidation warehouses;</li><li>
+      Cargo tracking and control;</li><li> Cargo trans-shipment at ports and border-crossings;</li><li> Cargo storage at ports and terminals;</li><li> Cargo insurance;</li></ul>
+    title: Our <br> services
+  oversized_cargo_transportation:
+    subtitle: 'Autotransportation of oversized cargo is one of the most complex types of transportation, which requires professional and individual approach, where every stage is important: both at the planning and at the delivery of cargo'
+    text: '<ul><li>Доставку регулярными линиями в предсказуемые сроки; </li> <li>Существенное сокращение транспортных расходов. </li> </ul> <p>Именно поэтому тысячи компаний в Европе и странах СНГ, умеющих считать свое время и деньги, отдают предпочтение перевозкам сборных грузов автотранспортом.</p>'
+    title: Oversized cargo transportation
+  railway_transportation:
+    subtitle: 'Rail transport is the most widespread type of cargo transportation, because of the wide range of advantages'
+    text: '<ul><li>Possibility to deliver cargoes almost in all weather conditions</li><li>Low cost of transportation, which allows to effectively transport large quantities of cargo by railways over long distances</li><li>Large carrying capacity of the railway rolling stock and high traffic capacity of trans-shipment and transit points, and of railway terminals</li><li>Frequency of transports and sustainable transport connectivity, which minimizes risks of the delay in delivery.</li></ul>'
+    title: Rail transport
+transport_serve: sf

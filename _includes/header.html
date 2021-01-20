@@ -13,7 +13,13 @@
           <div class="b-selecting-lang">
             <ul>
               <li>
-                <a class="selectLangEn" href="#">en</a>
+                {% if site.lang == "ru" %}
+                  {% capture link1 %} {{ site.baseurl_root }}/en{{ page.url }} {% endcapture %}
+                  <a href="{{ link1 }}" class="selectLangEn">{% t header.en %}</a>
+                {% else %}
+                  {% capture link2 %} {{ site.baseurl_root }}{{ page.url }} {% endcapture %}
+                  <a href="{{ link2 }}" class="selectLangRu">{% t header.ru %}</a>
+                {% endif %}
               </li>
             </ul>
             <div class="hide">
@@ -42,16 +48,16 @@
               <a href="/services">Услуги</a>
             </li>
             <li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148">
-              <a href="/geography">География</a>
+              <a href="/geography">{% t header.geogrphy %}</a>
             </li>
             <li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150">
-              <a href="/traffic">Грузы</a>
+              <a href="/traffic">{% t header.cargo %}</a>
             </li>
             <li id="menu-item-677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677">
-              <a href="/charity">Благотворительность</a>
+              <a href="/charity">{% t header.charity %}</a>
             </li>
             <li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471">
-              <a href="/projects">Проекты</a>
+              <a href="/projects">{% t header.projects %}</a>
             </li>
             <li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152">
               <a href="/contacts">Контакты</a>
@@ -93,11 +99,14 @@
         <div class="b-footer__item__adresses">
           <div class="b-selecting-lang b-header">
             <ul>
-              <li class="active">
-                <a class="selectLangRu" href="#">ru</a>
-              </li>
               <li>
-                <a class="selectLangEn" href="#">en</a>
+                {% if site.lang == "ru" %}
+                  {% capture link1 %} {{ site.baseurl_root }}/en{{ page.url }} {% endcapture %}
+                  <a class="selectLangEn" href="{{ link1 }}" >{% t header.ru %}</a>
+                {% else %}
+                  {% capture link2 %} {{ site.baseurl_root }}{{ page.url }} {% endcapture %}
+                  <a class="selectLangRu" href="{{ link2 }}" >{% t header.en %}</a>
+                {% endif %}
               </li>
             </ul>
           </div>
